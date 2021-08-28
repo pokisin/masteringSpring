@@ -10,8 +10,17 @@ public class Proxy implements Person{
 
 	@Override
 	public void greet() {
-		System.out.println("Tengo que hacer algo antes de que ejecutes la función...");
+		interceptor();
 		delegate.greet();
 	}
 
+	@Override
+	public void greetInEnglish() {
+		interceptor();
+		delegate.greetInEnglish();
+	}
+	
+	private void interceptor() {
+		System.out.println("Te observo que haces...");
+	}
 }

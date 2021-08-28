@@ -9,6 +9,9 @@ public class App {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 		MyService bean = ctx.getBean(MyService.class);
 		bean.doBusinessLogic();
+		
+		MyRepository repository = ctx.getBean(MyRepository.class);
+		repository.doQuery();
 	}
 
 }

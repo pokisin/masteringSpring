@@ -10,8 +10,8 @@ public class App {
 		MyService bean = ctx.getBean(MyService.class);
 		bean.doBusinessLogic();
 		
-		MyRepository repository = ctx.getBean(MyRepository.class);
-		repository.doQuery();
+		//MyRepository repository = ctx.getBean(MyRepository.class);
+		//repository.doQuery();
 	}
 
 }

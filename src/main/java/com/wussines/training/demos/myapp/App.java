@@ -1,12 +1,12 @@
  package com.wussines.training.demos.myapp;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App {
 
 	public static void main(String[] args) {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+		ApplicationContext ctx = new AnnotationConfigApplicationContext("com.wussines.training.demos.myapp");
 		MyService bean = ctx.getBean(MyService.class);
 		bean.doBusinessLogic();
 		

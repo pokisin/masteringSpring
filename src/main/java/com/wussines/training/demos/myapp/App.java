@@ -3,6 +3,7 @@
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.wussines.training.demos.myapp.business.MyService;
 import com.wussines.training.demos.myapp.config.AppConfig;
 
 public class App {
